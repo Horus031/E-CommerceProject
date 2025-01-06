@@ -1,0 +1,63 @@
+@import url('./main.css');
+/* Header */
+.header {
+    margin-top: 1.6rem;
+    border-bottom: 1px solid var(--secondary);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__title {
+    font-family: var(--font1);
+    font-size: 2rem;
+}
+
+.navbar__lists {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__lists-items {
+    font-size: 1.6rem;
+    padding: 16px;
+}
+
+.lists-items__links {
+    font-family: var(--font1);
+    text-decoration: none;
+    color: var(--text2)
+}
+
+/* Search Bar & User Info */
+.info__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.search__input {
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    background-color: var(--secondary);
+    font-family: var(--font1);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.search__icon {
+    position: absolute;
+    right: 0;
+}
