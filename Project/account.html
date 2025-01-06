@@ -13,26 +13,65 @@
             <div class="flex">
                 <div class="list">
 
-                    <p class="list__list1--title--font2">Manage My Account</p>
+                    <h2 class="list__list1--title--font2">Manage My Account</h2>
                     <ul class="list__list1">
                         <li class="list__item1--item1">My Profile</li>
                         <li class="list__item1--item2">Address Book</li>
                         <li class="list__item1--item3">My Paymen Options</li>
                     </ul>
 
-                    <p class="list__list2--title--font2">My Orders</p>
+                    <h2 class="list__list2--title--font2">My Orders</h2>
                     <ul class="list__list2">
                         <li class="list__item2--item1">My returns</li>
                         <li class="list__item2--item2">My Cancellations</li>
                     </ul>
 
-                    <p class="list__list3--title--font2">My WishList</p>
+                    <h2 class="list__list3--title--font2">My WishList</h2>
                     <ul class="list__list3">
 
                     </ul>
                 </div>
-                <div class="profile__title"> 
-                    <p class="profile__title--font1">Edit Your Profile</p>
+                <div class="profile">
+                    <div class="profile__title"> 
+                        <h2 class="profile__title--font1">Edit Your Profile</h2>
+                    </div>
+                    <div class="profile__infos">
+                        <div class="pad profile__infos--name flex">
+                            <div class="pad profile__infos--left">
+                                <label for="fname">First name</label><br>
+                                <input type="text" id="fname" name="fname" placeholder=" Md" value=""><br>
+                            </div>
+                            <div class="pad profile__infos--right">
+                                <label for="lname">Last name</label><br>
+                                <input type="text" id="lname" name="lname" placeholder=" Rimel" value=""><br>
+                            </div>  
+                        </div>
+                        <div class="pad profile__infos--contact flex">
+                            <div class="profile__infos--left">
+                                <label for="email">Email</label><br>
+                                <input type="email" id="email" name="email" placeholder=" rimel1111@gmail.com" value=""><br>
+                            </div>
+                            <div class="pad profile__infos--right">
+                                <label for="address">Address</label><br>
+                                <input type="text" id="address" name="address" placeholder=" Kingston, 5236, United State" value=""><br>
+                            </div>
+                        </div>
+                        <div class="pad profile__infos--password">
+                            <h2>Password Changes</h2>
+                            <input class="mar" type="text" id="current__password" name="current__password" placeholder=" Current Password" value=""><br>
+                            <input class="mar" type="text" id="new__password" name="new__password" placeholder=" New Password" value=""><br>
+                            <input class="mar" type="text" id="confirm__password" name="confirm__password" placeholder=" Confirm New Password" value=""><br>
+                        </div>
+                    </div>
+                    <div class="profile__buttons">
+                        <button class="profile__button1">
+                          Cancel
+                        </button>
+                        <div class="fill">
+                        </div>
+                        <button class="profile__button2">
+                          Save Changes
+                        </button>
                 </div>
             </div>
         </div>  
