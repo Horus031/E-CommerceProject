@@ -1,20 +1,27 @@
 @import url('./main.css');
+
+.container {
+    height: 100vh;
+}
+
 /* Header */
 .header {
-    margin-top: 1.6rem;
+    padding: 28px 0 16px 0;
     border-bottom: 1px solid var(--secondary);
+    font-weight: 400;
 }
 
 
-.navbar {
+.header__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .navbar__title {
     font-family: var(--font1);
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .navbar__lists {
@@ -24,7 +31,7 @@
 
 .navbar__lists-items {
     font-size: 1.6rem;
-    padding: 16px;
+    padding: 0 28px;
 }
 
 .lists-items__links {
@@ -37,27 +44,110 @@
 .info__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .search__wrapper {
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 8px;
+    margin-right: 16px;
 }
 
 .search__input {
     flex: 1;
     font-size: 1.2rem;
-    padding: 8px 16px;
+    padding: 10px 64px 8px 16px;
     background-color: var(--secondary);
     font-family: var(--font1);
     border: none;
     outline: none;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .search__icon {
     position: absolute;
-    right: 0;
+    color: var(--primary1);
+    right: 12px;
+}
+
+.info__icon {
+    display: flex;
+}
+
+.info__icon-link {
+    color: var(--primary1);
+    margin: 0 10px;
+}
+
+
+/* Footer */
+.footer {
+    margin-top: 21rem;
+    padding-top: 32px;
+    font-family: var(--font1);
+    background-color: var(--primary1);
+    color: var(--text);
+}
+
+.footer__lists {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__title {
+    font-size: 2.4rem;
+    margin: 16px 0;
+}
+
+.subscribe__title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.subscribe__desc {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.subscribe__input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 22rem;
+    margin-top: 16px;
+}
+
+.subscribe__input {
+    font-family: var(--font1);
+    color: var(--primary);
+    width: 100%;
+    padding: 10px 8px 10px 16px;
+    font-size: 1.4rem;
+    border: 1px solid var(--primary);
+    outline: none;
+    border-radius: 4px;
+    background-color: var(--primary1);
+}
+
+.subscribe__icon {
+    position: absolute;
+    right: 16px;
+    text-decoration: none;
+    color: var(--primary)
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+    border-top: 1px solid var(--text1);
+}
+
+.copyright__title {
+    color: var(--text1);
+    font-weight: 400;
 }
