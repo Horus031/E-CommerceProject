@@ -1,0 +1,71 @@
+@import url("./main.css");
+
+.wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--font2);
+}
+.wrapper__content{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.wrapper__logo img{
+    width: 700px;
+    max-width: 100%;
+}
+.wrapper__content__title {
+    font-size: 1.5rem;
+}
+h1{
+    font-weight: 450;
+    letter-spacing: 2.2px;
+    padding-bottom: 20px;
+}
+h4{
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+.wrapper__input__data input{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    outline: none;
+}
+.wrapper__input__data{
+    display: flex;
+    flex-direction: column;
+}
+::placeholder{
+    color: silver;
+    font-weight: 100;
+}
+button{
+    background-color: #db4445;
+    border: none;
+    color: white;
+    padding: 17px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+button:hover{
+    background-color: #bc3b3b;
+}
+a {
+    text-decoration: none;
+    color: #db4445;
+    font-size: 13px;
+    padding-left: 60px;
+    padding-right: 0;
+}
+
