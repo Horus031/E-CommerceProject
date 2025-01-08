@@ -11,3 +11,21 @@ async function renderComponent(id, file) {
 
 renderComponent('header-wrapper', 'header.html')
 renderComponent('footer-wrapper', 'footer.html')
+
+let promise = new Promise(
+    // Executor
+    function(resolve, reject) {
+        reject()
+    }
+)
+
+promise
+    .then(function(data) {
+        console.log(data)
+    })
+    .then(function(data) {
+        console.log(data);
+    })
+    .catch(function(data) {
+        console.error('Error')
+    })
