@@ -1,0 +1,197 @@
+@import url('./main.css');
+
+* {
+    font-family: var(--font1);
+}
+
+
+.checkout {
+    margin-top: 60px;
+}
+
+.checkout__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 34px;
+}
+
+
+/* Billing Details */
+.billing__title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.billing__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.billing__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.billing__info,
+.billing__products {
+    flex-basis: 50%;
+    margin-right: 10rem;
+}
+
+.billing__input {
+    border: none;
+    background-color: var(--secondary);
+    border-radius: 2px;
+    height: 36px;
+}
+
+.billing__label {
+    color: var(--text1);
+    font-size: 1.2rem;
+}
+
+.input__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__wrapper + .input__wrapper {
+    margin-top: 16px;
+}
+
+.billing__payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 36px;
+}
+
+/* Product Lists */
+.products__lists {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.products__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.items__info {
+    display: flex;
+    align-items: center;
+}
+
+.items__img {
+    height: 40px;
+}
+
+.items__title {
+    margin-left: 16px;
+    font-weight: 400;
+}
+
+.items__title,
+.items__price,
+.payment__title,
+.payment__price {
+    font-size: 1.2rem;
+}
+
+/* Payment */
+.payment__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0 8px 0;
+}
+
+.payment__desc + .payment__desc {
+    border-top: 1px solid var(--secondary);
+}
+
+.payment__type-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.payment__type--cash {
+    display: flex;
+    align-items: center;
+}
+
+.payment__checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.payment__img-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.payment__type-title {
+    font-size: 1.2rem;
+    margin-left: 8px;
+}
+
+.payment__type--banking {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 24px 0;
+}
+
+
+/* Coupon and Place Order */
+.payment__coupon {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.coupon__wrapper {
+    display: flex;
+
+}
+
+.coupon__code {
+    flex: 1;
+    flex-basis: 60%;
+    height: 40px;
+    padding: 16px;
+    border: 1px solid var(--primary1);
+    border-radius: 4px;
+    margin-right: 32px;
+}
+
+.coupon__button,
+.order__button {
+    flex-basis: 40%;
+    background-color: var(--secondary2);
+    color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order__wrapper {
+    margin-top: 24px;
+}
+
+.order__button {
+    text-align: center;
+    padding: 10px 40px;
+}

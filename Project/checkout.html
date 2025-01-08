@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/checkout.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-wrapper">
+
+        </div>
+        
+        <section class="checkout">
+            <div class="grid">
+                <h2 class="checkout__title">
+                    Account / My Account / Product / View Cart / CheckOut
+                </h2>
+
+                <div class="billing__wrapper">
+                    <h1 class="billing__title">Billing Details</h1>
+                    <section class="billing__details">
+                        <div class="billing__info">
+                            <div class="input__wrapper">
+                                <label for="billing__name" class="billing__label">First Name</label>
+                                <input class="billing__input" type="text" name="name" id="billing__name">
+                            </div>
+                            <div class="input__wrapper">
+                                <label for="billing__company" class="billing__label">Company Name</label>
+                                <input class="billing__input" type="text" name="company" id="billing__company">
+                            </div>
+                            <div class="input__wrapper">
+                                <label for="billing__address" class="billing__label">Street Address</label>
+                                <input class="billing__input" type="text" name="address" id="billing__address">
+                            </div>
+                            <div class="input__wrapper">
+                                <label for="billing__optionalAddress" class="billing__label">Apartment, floor, etc. (optional)</label>
+                                <input class="billing__input" type="text" name="optionalAddress" id="billing__optionalAddress">
+                            </div>
+                            <div class="input__wrapper">
+                                <label for="billing__city" class="billing__label">Town/City</label>
+                                <input class="billing__input" type="text" name="city" id="billing__city">
+                            </div>
+                            <div class="input__wrapper">
+                                <label for="billing__phone" class="billing__label">Phone Number</label>
+                                <input class="billing__input" type="text" name="phone" id="billing__phone">
+                            </div>
+                            <div class="input__wrapper">
+                                <label for="billing__email" class="billing__label">Email Address</label>
+                                <input class="billing__input" type="email" name="email" id="billing__email">
+                            </div>
+                        </div>
+                        <div class="billing__products">
+                            <div class="billing__payment">
+                                <ul class="products__lists">
+                                    <li class="products__items">
+                                        <div class="items__info">
+                                            <img src="./assets/Gamepad-Cart-Small.png" alt="" class="items__img">
+                                            <h4 class="items__title">LCD Monitor</h4>
+                                        </div>
+                                        <span class="items__price">
+                                            $650
+                                        </span>
+                                    </li>
+                                    <li class="products__items">
+                                        <div class="items__info">
+                                            <img src="./assets/Monitor-Cart-Small.png" alt="" class="items__img">
+                                            <h4 class="items__title">H1 Gamepad</h4>
+                                        </div>
+                                        <span class="items__price">
+                                            $1100
+                                        </span>
+                                    </li>
+                                </ul>
+                                <section class="payment__info">
+                                    <div class="payment__desc">
+                                        <span class="payment__title">
+                                            Subtotal:
+                                        </span>
+                                        <span class="payment__price">
+                                            $1750
+                                        </span>
+                                    </div>
+                                    <div class="payment__desc">
+                                        <span class="payment__title">
+                                            Shipping:
+                                        </span>
+                                        <span class="payment__price">
+                                            Free
+                                        </span>
+                                    </div>
+                                    <div class="payment__desc">
+                                        <span class="payment__title">
+                                            Total:
+                                        </span>
+                                        <span class="payment__price">
+                                            $1750
+                                        </span>
+                                    </div>
+                                    <div class="payment__type-wrapper">
+                                        <div class="payment__type--banking">
+                                            <input type="radio" name="paymentType" id="paymentTypeBanking" class="payment__checkbox">
+                                            <label for="paymentType" class="payment__type-title">Bank</label>
+                                        </div>
+
+                                        <div class="payment__img-wrapper">
+                                            <img src="./assets/Bkash.png" alt="" class="payment__img">
+                                            <img src="./assets/visa.png" alt="" class="payment__img">
+                                            <img src="./assets/mastercard.png" alt="" class="payment__img">
+                                            <img src="./assets/image 33.png" alt="" class="payment__img">
+                                        </div>
+                                    </div>
+                                    <div class="payment__type--cash">
+                                        <input type="radio" name="paymentType" id="paymentTypeCash" class="payment__checkbox">   
+                                        <label for="paymentType" class="payment__type-title">Cash on delivery</label>
+                                    </div>
+                                </section>
+                            </div>
+                            <section class="payment__coupon">
+                                <div class="coupon__wrapper">
+                                    <input type="text" class="coupon__code" placeholder="Coupon Code">
+                                    <button type="button" class="coupon__button">
+                                        Apply Coupon
+                                    </button>
+                                </div>
+                                <div class="order__wrapper">
+                                    <button class="order__button">Place Order</button>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer-wrapper">
+    
+        </div>
+    </div>
+
+    <script src="./Scripts/script.js"></script>
+</body>
+</html>
