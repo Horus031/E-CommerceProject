@@ -1,5 +1,7 @@
 @import url("./main.css");
-
+.container{
+    padding: 20px;
+}
 .wrapper{
     align-items: center;
     display: flex;
