@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/login.css" type="text/css" />
+    <link rel="stylesheet" href="./Styles/Log-In.css" type="text/css" />
     <title>Login</title>
 </head>
 <body>
     <div class="container">
+        <div id="header-wrapper"></div>
         <div class="grid">
             <div class="wrapper">
-                <div class="wrapper__logo">
-                    <img src="./LOGO.png" alt="Company Logo">
+                <div class="wrapper__advertise">
+                    <img src="./assets/main/advertise-picture.png" alt="advertise-picture">
                 </div>
                 <div class="wrapper__content">
                     <div class="wrapper__content__title">
@@ -24,11 +25,20 @@
                         <label for="password"></label>
                         <input type="password" id="password" placeholder="Password" required>
                     </div>
-                    <button type="submit">Log In</button>
-                    <a href="#" class="forget-password">Forget Password?</a>   
+                    <div class="wrapper__btn">
+                        <div class="submit__btn">
+                            <button type="submit">Log In</button>
+                        </div>
+                        <div class="forget-password__btn">
+                            <a href="#" class="forget_password">Forget password?</a>   
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="footer-wrapper"></div>
+
     </div>
 </body>
 </html>
+<script src="./Scripts/script.js"></script>
