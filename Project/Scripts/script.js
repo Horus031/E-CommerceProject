@@ -2,8 +2,8 @@ async function renderComponent(id, file) {
     const element = document.getElementById(id);
     const response = await fetch(file);
     if (response.ok) {
-        element.innerHTML = await response.text();
         console.log(response);
+        element.innerHTML = await response.text();
     } else {
         throw new Error(`Can't load file ${file}`);
     }

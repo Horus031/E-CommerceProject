@@ -1,0 +1,183 @@
+@import url('./main.css');
+
+* {
+    font-family: var(--font1);
+}
+
+.wishlist {
+    margin-top: 60px;
+}
+
+
+.wishlist__feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.wishlist__title {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.wishlist__button,
+.suggest__button {
+    background-color: transparent;
+    border: 1px solid var(--primary1);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 28px;
+}
+
+
+/* Products */
+
+.products__lists,
+.suggest__lists {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products__items-info,
+.suggest__items-info {
+    position: relative;
+}
+
+.products__wrapper,
+.suggest__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.products__wrapper + .products__wrapper,
+.suggest__wrapper + .suggest__wrapper {
+    margin-left: 32px;
+}
+
+
+.items__feature {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+    background-color: black;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.feature__title {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+.items__img {
+    background-color: var(--secondary);
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.img1 {
+    background-image: url(/Project/assets/wishlist/gucci.png);
+}
+.img2 {
+    background-image: url(/Project/assets/wishlist/cooler.png);
+}
+.img3 {
+    background-image: url(/Project/assets/wishlist/playstation.png);
+}
+.img4 {
+    background-image: url(/Project/assets/wishlist/jacket.png);
+}
+.img5 {
+    background-image: url(/Project/assets/wishlist/ideapad.png);
+}
+.img6 {
+    background-image: url(/Project/assets/wishlist/monitor.png);
+}
+.img7 {
+    background-image: url(/Project/assets/wishlist/gamepad.png);
+}
+.img8 {
+    background-image: url(/Project/assets/wishlist/keyboard.png);
+}
+
+.items__delete {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 4px;
+    right: 4px;
+}
+
+.items__title {
+    margin: 8px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.items__price-info {
+    color: var(--secondary2);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Suggest Section */
+.wishlist__suggest {
+    margin-top: 60px;
+}
+
+.suggest__feature__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.suggest__feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggest__title--block {
+    background-color: var(--secondary2);
+    width: 15px;
+    height: 30px;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.items__rating-info {
+    display: flex;
+    align-items: center;
+}
+
+.items__ratings {
+    font-size: 1.8rem;
+    color: darkorange;
+    margin-right: 8px;
+}
+
+.ratings__quantity {
+    font-size: 1.2rem;
+    color: var(--text1);
+}
