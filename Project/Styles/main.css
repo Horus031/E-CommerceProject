@@ -108,6 +108,7 @@ html {
 
 .info__icon {
     display: flex;
+    align-items: center;
 }
 
 .info__icon-link {
