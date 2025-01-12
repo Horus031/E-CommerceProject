@@ -130,3 +130,25 @@ input {
 .profile__button2:hover {
     background-color: #c13333;
 }
+
+.head {
+    font-family: var(--font1);
+    font-size: 1.6rem;
+}
+
+.listleft {
+    font-family: var(--font1);
+    font-size: 1.2rem;
+    color: var(--text1);
+
+}
+
+.headimportant {
+    font-family: var(--font1) !important;
+    font-size: 1.2rem !important;
+    color: var(--text2) !important;
+}
+
+.blackimportant {
+    color: var(--text2) !important;
+}
