@@ -1,51 +1,59 @@
 @import url("./main.css");
-.wrapper{
+
+.wrapper {
     align-items: center;
     display: flex;
     justify-items: center;
     padding-top: 50px;
 }
-.wrapper__content{
+
+.wrapper__content {
     padding-left: 125px;
 }
-.wrapper__advertise img{
+
+.wrapper__advertise img {
     width: 700px;
 }
+
 .wrapper__content__title {
     font-size: 1.7rem;
 }
-h1{
+
+h1 {
     font-weight: 500;
     letter-spacing: 2px;
     padding-bottom: 20px;
     font-family: var(--font2);
 }
-h4{
+
+h4 {
     font-weight: 400;
     padding-bottom: 15px;
     font-size: 14px;
     font-family: var(--font1);
 }
-.wrapper__input__data input{
+
+.wrapper__input__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__input__data input {
     border: none;
     border-bottom: 1px solid gray;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-bottom: 5px;
-    padding-top: 20px;
+    margin: 10px 0;
+    padding: 20px 0 5px;
     outline: none;
     font-family: var(--font1);
     width: 356px;
 }
-.wrapper__input__data{
-    display: flex;
-    flex-direction: column;
-}
-::placeholder{
+
+::placeholder {
     color: #999999;
     font-weight: 350;
     font-size: 14px;
 }
+
 .submit__btn button {
     background-color: #db4445;
     border: none;
@@ -60,10 +68,12 @@ h4{
     transition-duration: 0.4s;
     font-family: var(--font1);
 }
-.submit__btn button:hover{
+
+.submit__btn button:hover {
     background-color: #bc3b3b;
 }
-.forget-password__btn a{
+
+.forget-password__btn a {
     display: flex;
     text-decoration: none;
     color: #db4445;
@@ -71,11 +81,11 @@ h4{
     font-family: var(--font1);
     font-weight: 300;
 }
+
 .wrapper__btn {
     display: flex;
     align-items: center;
-    justify-items: center;
-    width: 356px;
     justify-content: space-between;
+    width: 356px;
     margin-top: 25px;
 }
