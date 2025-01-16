@@ -6,14 +6,18 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="./Styles/main.css">
     <link rel="stylesheet" href="./Styles/homepage.css">
+    <link rel="stylesheet" href="./Styles/slick/slick.css">
+    <link rel="stylesheet" href="./Styles/slick/slick-theme.css"/>
+    <script src="./Scripts/homepagescript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     </div class="container">
         <div id="header-wrapper"></div>
-        <div class="grid">
+        <div class="grid center pad">
 
-            <div class="sec1">
-                <div class="sec1__list">
+            <div class="sec1 flex space-around">
+                <div class="sec1__list font1">
                     <p>Woman's Fation</p>
                     <p>Men's Fation</p>
                     <p>Electonics</p>
@@ -24,19 +28,43 @@
                     <p>Groceries & Pets</p>
                     <p>Health & Beauty</p>
                 </div>
-                <div class="sec1__step">
-
+                <div class=" sec1_carousel single-slick" style="width: 500px;height: 250px;">
+                    <div><img src="https://media.licdn.com/dms/image/v2/D5612AQHYW4X_LorSIw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1729599832672?e=2147483647&v=beta&t=FKPpCjuug9JjetC4X39n4Uqnu65x1b6EisWDWg6fKng" style="width: 500px !important;height: 250px !important ;"></div>
+                    <div><img src="https://onewaymobile.vn/upload_images/images/2022/11/12/iphone-15-ultra-concept.jpeg"style="width: 500px !important;height: 250px !important ;"></div>
+                    <div><img src="https://www.figma.com/community/resource/a1d9490e-7107-4d4d-9d7f-4d7784e18d20/thumbnail" style="width: 500px !important;height: 250px !important ;"></div>
+                    <div><img src="https://www.pensando.it/wp-content/uploads/2021/10/iphone-13-1024x420.webp" style="width: 500px !important;height: 250px !important ;"></div>
                 </div>
-
-
-
-
-
-
-
-
-
             </div>
+            <div class="title flex" style="height: fit-content;width: fit-content;">
+                <div style="background-color: red; padding: 5px; border-radius: 20%;"></div>
+                <p class="font1" style="color: red !important;font-weight: bold!important; padding-left: 10px; ">Today's</p>
+            </div>
+            <div class="title__con flex font2" style="font-weight: bold;">
+                <p style="padding: 0% !important;">Flash Sales</p>
+                <div class="flex"style= "width: 100%" >
+                    <div class="dot"></div>
+                    <div>
+                        <p class="center" >Days</p>
+                        <p style="margin-left: 25%;">03</p>
+                    </div>
+                    <div class="dot">:</div>
+                    <div>
+                        <p>Hours</p>
+                        <p style="margin-left: 25%;">03</p>
+                    </div>
+                    <div class="dot">:</div>
+                    <div>
+                        <p>Minutes</p>
+                        <p style="margin-left: 25%;">03</p>
+                    </div>
+                    <div class="dot">:</div>
+                    <div>
+                        <p>Seconds</p>
+                        <p style="margin-left: 25%;">03</p>
+                    </div>
+                </div>
+            </div>
+            
 
 
 
@@ -54,5 +82,19 @@
     </div>
 
     <script src="./Scripts/script.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./Styles/slick/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.single-slick').slick({
+           slidesToShow: 1,
+           slidesToScroll: 1, 
+           dots:true,
+           autoplay:true,
+           autoplaySpeed: 2000,
+        });
+      });
+    </script>          
 </body>
 </html>

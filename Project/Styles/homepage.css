@@ -1,5 +1,45 @@
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content:center !important;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.font1 {
+    font-family: var(--font1);
+    font-size: 1.4rem;
+}
+
+p{
+    text-wrap: nowrap;
+    padding: 3%;
+    width: fit-content;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+}
+
+.pad{
+    padding-top: 2%;
+}
+
+.font2{
+     font-family: var(--font2);
+     font-size: 2rem;
+}
+
+.dot{
+    color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.justcol{
+    justify-self:center;
 }
