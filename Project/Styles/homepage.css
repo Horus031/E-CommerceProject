@@ -7,6 +7,7 @@
 }
 .sec1_carousel{
     position: relative;
+    overflow: hidden;
 }
 .center {
     justify-content:center !important;
@@ -53,9 +54,11 @@ p{
 
 
 .slide {
+    position: absolute;
     inset: 0;
     opacity: 0;
     overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .slide > img {  
@@ -65,6 +68,7 @@ p{
 
 .slide[data-active]{
     opacity: 1;
+    z-index: 1; 
 }
 
 .carousel-button{
