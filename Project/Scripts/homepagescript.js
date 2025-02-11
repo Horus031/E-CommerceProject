@@ -58,4 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
     carousel.addEventListener('mouseleave', () => {
         startAutoSlide();
     });
+
+
+
+
+
+
 });
