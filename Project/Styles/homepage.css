@@ -108,9 +108,7 @@ p{
     font-size: 2rem;
     border-radius: 100px;
     cursor: pointer;
-    padding-left:16px ;
-    padding-right:16px;
-    padding-bottom: 1px;
+    margin: auto;
 }
 
 .carousel_stylle_button:hover,
@@ -137,4 +135,10 @@ p{
 .vpb{
     display: flex;
     justify-content: center;
+}
+.whbutton {
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
